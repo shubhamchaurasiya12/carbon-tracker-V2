@@ -1,0 +1,64 @@
+/* Full screen background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: black;
+}
+
+/* Transparent glass-like container */
+.form-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  width: 350px;
+}
+
+/* Center the image */
+.logo-img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 0 auto 20px auto;
+  
+}
+
+/* Input styling */
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Button styling */
+button {
+  width: 105%;
+  padding: 10px;
+  background: #0aa005;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0a6506; /* slightly lighter green on hover */
+  transform: scale(1.03); /* makes the button slightly bigger */
+  transition: all 0.3s ease; /* smooth animation */
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carbon Tracker</title>
+  <link rel="stylesheet" href="..\static\CSS\home.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="{{ url_for('static', filename='Images/image.png') }}" alt="CarbonTracker Logo" class="logo-img" />
+    </div>
+    <div class="nav_background">
+      <ul class="nav-links">
+        <li><a href="#" class="nav-btn">Home</a></li>
+        <li><a href="#features" class="nav-btn">Features</a></li>
+        <li><a href="#about" class="nav-btn">About</a></li>
+        <li><a href="{{ url_for('login_page') }}" class="nav-btn">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-text">
+      <h1>Join the Mission to Track and Reduce</h1>
+      <h1>Your <span style="color: rgb(6, 197, 6);">Carbon Footprint</span></h1>
+      <p>Register now to monitor your daily emissions and start building </p>
+      <p class="two">greener lifestyle — one step at a time.</p>
+      <a href="{{ url_for('register_page') }}" class="signup-btn">Register Now</a>
+    </div>
+
+    <!-- Spline Earth -->
+    <iframe id="spline-bg" src="https://my.spline.design/worldplanetdarkred-gENhpwhHUmQ42IZlWrbDasuL/"
+      frameborder="0"></iframe>
+  </div>
+
+  <div style="height: 40px;"></div>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h1>About this Website</h1>
+    <p>
+      Our Carbon Footprint Tracker is a digital tool built to help you measure the invisible impact of your daily life
+      on the planet. Every action we take — from commuting to eating to charging our phones — contributes to carbon
+      emissions. But most people don’t know how much they’re emitting or where they can make meaningful changes.
+      <br><br>
+      This website changes that.
+      <br><br>
+      With a few quick inputs, it calculates your estimated carbon footprint and turns it into clear, visual data you
+      can understand. Whether you’re an individual trying to live more sustainably or a student learning about climate
+      change, this platform gives you a personal, data-driven look at how your lifestyle affects the environment.
+      <br><br>
+      Our mission is to make climate awareness simple, measurable, and actionable.
+      Because the first step to reducing your footprint… is knowing what it is.
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h1>Key Features</h1>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h2>🧠 Smart Emission Estimator</h2>
+        <p>
+          Automatically calculate your daily carbon output based on your lifestyle habits — no formulas or guesswork
+          required. Powered by real-time data models and behavior patterns.
+        </p>
+      </div>
+      <div class="feature-item">
+        <h2>📊 Personal Carbon Dashboard</h2>
+        <p>
+          Visualize your footprint with dynamic graphs, color-coded zones, and daily/weekly breakdowns. See exactly
+          where your emissions come from — transport, electricity, food, and more.
+        </p>
+      </div>
+      <div class="feature-item">
+        <h2>🎯 Weekly Eco Challenges</h2>
+        <p>
+          Get small, achievable tasks every week (like “Go Meatless Monday” or “Take a No-Car Day”) that help you reduce
+          your footprint over time — and track your progress.
+        </p>
+      </div>
+      <div class="feature-item">
+        <h2>🧬 Lifestyle Comparison Mode</h2>
+        <p>
+          Compare your carbon impact with friends, global averages, or sustainable ideal goals — see how you rank and
+          what you can change.
+        </p>
+      </div>
+      <div class="feature-item">
+        <h2>🌎 Global Impact Tracker</h2>
+        <p>
+          See the combined reduction made by all users in real time. Every gram saved by you adds up to a larger climate
+          movement — visualized on a global emissions map.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What is a carbon footprint?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>A carbon footprint is the total amount of greenhouse gases produced by human activities, usually measured
+            in CO₂ equivalents.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Why is it important to reduce it?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Reducing carbon footprint helps fight climate change, protect ecosystems, and ensure a healthier planet for
+            future generations.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How can I calculate my carbon footprint?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>You can use online carbon calculators that consider your travel, energy use, diet, and consumption habits.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What are the main sources of carbon emissions?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Main sources include transportation, electricity usage, industrial processes, agriculture, and
+            deforestation.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Can changing my diet reduce my footprint?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, eating less meat and processed food significantly reduces emissions associated with food production.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Is carbon offsetting effective?</span>
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Carbon offsetting can help balance unavoidable emissions, but it's best used alongside direct reduction
+            efforts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Connect With Us</h2>
+    <div class="contact-icons">
+      <a href="https://www.instagram.com/" target="_blank" class="contact-link">
+        <i class="fab fa-instagram"></i> staggered_anmol
+      </a>
+      <a href="https://wa.me/919876543210" target="_blank" class="contact-link">
+        <i class="fab fa-whatsapp"></i> 8780938399
+      </a>
+      <a href="mailto:anmolkumarchauhan7717@gmail.com" class="contact-link">
+        <i class="fas fa-envelope"></i> anmolkumarchauhan7717@gmail.com
+      </a>
+      <a href="tel:+919876543210" class="contact-link">
+        <i class="fas fa-phone-alt"></i> +91 8780938399
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 CarbonTracker. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="..\static\JS\script.js"></script>
+
+</body>
+
+</html>
